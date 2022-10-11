@@ -6,17 +6,16 @@ public class ReverseLinkedList {
 
         if (head == null)
             return null;
-        ListNode x = head;
-        ListNode y = head.next;
-        while (y.next != null) {
-            ListNode temp = new ListNode(x.val, x.next);
-            y.next = x;
-            x = y;
-            y = temp.next;
+        ListNode prev = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
         }
-        head.next = null;
-        x.next = head;
-        return x;
+        return prev;
+
     }
 
     public static void main(String[] args) {
