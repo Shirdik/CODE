@@ -3,7 +3,7 @@ package Java;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PreOrderTraversal {
+public class TreeTraversal {
     public static List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
         if (root == null)
@@ -17,7 +17,7 @@ public class PreOrderTraversal {
     public static List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<Integer>();
         if (root == null)
-            return res;
+            return null;
 
         res.addAll(inorderTraversal(root.left));
         res.add(root.val);
@@ -41,6 +41,6 @@ public class PreOrderTraversal {
         TreeNode y = new TreeNode(3);
         root.right = x;
         x.left = y;
-        System.out.println(preorderTraversal(root));
+        System.out.println(inorderTraversal(root));
     }
 }
