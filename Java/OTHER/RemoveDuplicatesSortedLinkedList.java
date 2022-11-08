@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 public class RemoveDuplicatesSortedLinkedList {
     public static ListNode removeDups(ListNode head) {

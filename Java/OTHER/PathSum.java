@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 public class PathSum {
     public boolean hasPathSum(TreeNode root, int targetSum) {

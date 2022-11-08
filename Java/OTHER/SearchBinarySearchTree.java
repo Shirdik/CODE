@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 public class SearchBinarySearchTree {
     public TreeNode searchBST(TreeNode root, int val) {

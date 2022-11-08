@@ -3,7 +3,7 @@ package Java.EASY;
 import java.util.ArrayList;
 import java.util.List;
 
-import Java.RemoveLinkedLIstElements.ListNode;
+import Java.OTHER.RemoveLinkedLIstElements.ListNode;
 
 public class IntersectionOfLinkedLists {
 

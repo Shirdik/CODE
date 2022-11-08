@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 public class TreeNode {
     int val;

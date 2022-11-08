@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import Java.ListNode;
+import Java.OTHER.ListNode;
 
 public class PalindromeLinkedList {
     public static boolean isPalindrome1(ListNode head) {

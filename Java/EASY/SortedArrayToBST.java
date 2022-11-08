@@ -1,7 +1,7 @@
 package Java.EASY;
 
-import Java.TreeNode;
-import Java.TreeTraversal;
+import Java.OTHER.TreeNode;
+import Java.OTHER.TreeTraversal;
 
 public class SortedArrayToBST {
 

@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 public class SymmetricTree {
     public boolean isMirror(TreeNode root1, TreeNode root2) {

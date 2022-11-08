@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 public class MaxDepth {
     public static int maxDepth(TreeNode root) {

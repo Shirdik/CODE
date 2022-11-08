@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 public class InvertTree {
     public TreeNode invertTree(TreeNode root) {

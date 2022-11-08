@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;

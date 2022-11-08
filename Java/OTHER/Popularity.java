@@ -1,4 +1,4 @@
-package Java;
+package Java.OTHER;
 
 import java.util.*;
 
