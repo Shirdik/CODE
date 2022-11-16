@@ -34,8 +34,6 @@ public class MaximumSumDistinctSub {
         int i = 0, j = 0;
         long o = 0, t = 0;
         Map<Integer, Integer> m = new HashMap<>();
-        // Queue<Integer> m = new LinkedList<>();
-        // Set<Integer> s = new HashSet<>();
         while (j < nums.length) {
             t += nums[j];
             if (!m.containsKey(nums[j]))
@@ -55,10 +53,8 @@ public class MaximumSumDistinctSub {
                 i++;
                 j++;
             }
-
         }
         return o;
-
     }
 
     public static void main(String[] args) {

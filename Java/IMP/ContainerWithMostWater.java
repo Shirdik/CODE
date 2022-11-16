@@ -2,9 +2,7 @@ package Java.IMP;
 
 public class ContainerWithMostWater {
     public static int maxArea(int[] h) {
-
         int x = 0, y = h.length - 1, o = 0;
-
         while (x < y) {
             o = Math.max(o, Math.min(h[x], h[y]) * (y - x));
             if (h[x] > h[y])
@@ -12,7 +10,6 @@ public class ContainerWithMostWater {
             else
                 x++;
         }
-
         return o;
     }
 
