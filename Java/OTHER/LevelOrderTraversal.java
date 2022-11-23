@@ -1,25 +1,37 @@
 package Java.OTHER;
-// package Java;
 
-// import java.util.ArrayList;
-// import java.util.List;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
-// public class LevelOrderTraversal {
-// public static List<List<Integer>> levelOrder(TreeNode root) {
-// List<List<Integer>> res = new ArrayList<List<Integer>>();
+public class LevelOrderTraversal {
 
-// while (root != null) {
+    public static List<List<Integer>> levelOrder(TreeNode root) {
+        Queue<TreeNode> q = new LinkedList<>();
+        List<List<Integer>> l = new ArrayList<>();
 
-// }
-// }
+        if (root == null)
+            return l;
+        q.offer(root);
 
-// // public static TreeNode createTree(Integer[] nodes) {
+        while (!q.isEmpty()) {
+            int ln = q.size();
+            List<Integer> t = new LinkedList<>();
+            for (int i = 0; i < ln; i++) {
+                if (q.peek().left != null)
+                    q.offer(q.peek().left);
+                if (q.peek().right != null)
+                    q.offer(q.peek().right);
+                t.add(q.poll().val);
+            }
+            l.add(t);
+        }
+        return l;
 
-// // }
+    }
 
-// public static void main(String[] args) {
-// Integer[] nodes = { 3, 9, 20, null, null, 15, 7 };
-// // TreeNode root = createTree(nodes);
+    public static void main(String[] args) {
 
-// }
-// }
+    }
+}
