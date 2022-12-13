@@ -10,7 +10,7 @@ public class SearchRotatedSortedArray {
             int next = (mid + 1) % n;
             if (nums[mid] <= nums[prev] && nums[mid] <= nums[next]) {
                 return mid;
-            } else if (nums[h] >= nums[mid])
+            } else if (nums[mid] < nums[h])
                 h = mid - 1;
             else if (nums[l] <= nums[mid])
                 l = mid + 1;
@@ -43,8 +43,7 @@ public class SearchRotatedSortedArray {
 
     public static void main(String[] args) {
         int nums[] = { 4, 5, 6, 7, 0, 1, 2 };
-        int nums1[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
-        System.out.println(search(nums, 0));
+        System.out.println(search(nums, 2));
 
     }
 }

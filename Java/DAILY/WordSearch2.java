@@ -93,7 +93,7 @@ public class WordSearch2 {
         String[] words3 = { "aaa" };
         // System.out.println(findWords1(board1, words1));
         // System.out.println(findWords1(board2, words2));
-        System.out.println(findWords1(board3, words3));
+        System.out.println(findWords1(board1, words1));
     }
 
 }
